@@ -53,7 +53,9 @@ gulp.task('test', function (cb) {
   // using istanbul
   // https://github.com/SBoudrias/gulp-istanbul/issues/37
   gulp.src(sourcePaths.app)
-    .pipe(istanbul({includeUntested:true})) // Covering files
+    .pipe(istanbul({
+      includeUntested:true
+    })) // Covering files
     .on('finish', function () {
       gulp.src(['test/m4.test.js'])
       .pipe(lab('-v -C -l -m 0')) // developer output
