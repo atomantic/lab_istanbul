@@ -57,7 +57,7 @@ gulp.task('test', function (cb) {
       includeUntested:true
     })) // Covering files
     .on('finish', function () {
-      gulp.src(['test/m4.test.js'])
+      gulp.src(['test/index.js'])
       .pipe(lab('-v -C -l -m 0')) // developer output
       .pipe(istanbul.writeReports()) // Creating the reports after tests runned
       .on('end', cb);
