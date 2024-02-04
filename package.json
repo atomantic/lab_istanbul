@@ -6,7 +6,7 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "hapi": "^11.1.4"
+    "hapi": "^18.1.0"
   },
   "devDependencies": {
     "gulp": "^3.8.7",
